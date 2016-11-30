@@ -1,6 +1,8 @@
-var Weapon = function(name, dmgValue) {
+var Weapon = function(name, dmgValue, disposable, value) {
   this.name = name;
   this.dmgValue = dmgValue;
+  this.disposable = disposable;
+  this.value = value;
 }
 
 Weapon.prototype = {

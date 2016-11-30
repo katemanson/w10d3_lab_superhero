@@ -10,7 +10,7 @@ function Rat (name, health) {
 };
 
 Rat.prototype.touchFood = function(food) {
-  if ( food.repValue > 0 ) {
+  if ( food.repValue > 0 && this.health > 0 ) {
     food.repValue = -(food.repValue);
   };
 };
