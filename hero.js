@@ -2,7 +2,7 @@ var Weapon = require("./weapon");
 
 var Hero = function(name, faveFood) {
   this.name = name;
-  this.health = 100;
+  this.health = 10;
   this.faveFood = faveFood;
   this.weapons = [];
   this.score = 0;
