@@ -1,7 +1,6 @@
 var Weapon = require("../weapon");
 var assert = require("assert");
 
-
 describe("Weapon", function() {
 
   var bagpipes = new Weapon("Bagpipes of Doom", 50, false, 7);

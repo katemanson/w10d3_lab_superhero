@@ -16,6 +16,7 @@ Hero.prototype = {
   eat: function(food) {
     if ( food.name === "Irn Bru" ) {
       this.health += food.repValue;
+      this.score += food.pointsValue;
       this.irnBruCounter++;
       if ( this.irnBruCounter >= 3 ) {
         var irnBruBurp = new Weapon("Unleash the Burp", 100, true);
@@ -25,9 +26,11 @@ Hero.prototype = {
     }
     else if ( food.name === this.faveFood ) {
       this.health += (food.repValue * 1.5);
+      this.score += food.pointsValue;
     }
     else {
       this.health += food.repValue;
+      this.score += food.pointsValue;
     };
   },
   addWeapon: function(weapon) {
@@ -45,7 +48,7 @@ Hero.prototype = {
       this.weapons.splice(index, 1);
     };
     if ( enemy.health <= 0 ) {
-      return "You've kilt it!";
+      return "Ye've kilt it!";
     };
   }
 };
