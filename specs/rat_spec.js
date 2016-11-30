@@ -17,7 +17,7 @@ describe("Rat", function() {
     assert.equal(-5, testNeeps.repValue);
   });
 
-  it("should start with 100 health", function() {
+  it("should start with full health", function() {
     assert.equal(50, testRat.health);
   });
 
